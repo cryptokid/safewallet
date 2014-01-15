@@ -1,79 +1,175 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Safewallet : Safewallet open-source crypto-currency banking software" />
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-    <title>Safewallet</title>
+    <title>Safewallet by cryptokid</title>
   </head>
 
   <body>
+    <header>
+      <div class="inner">
+        <h1>Safewallet</h1>
+        <h2>Safewallet open-source crypto-currency banking software</h2>
+        <a href="https://github.com/cryptokid/safewallet" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/cryptokid/safewallet">View on GitHub</a>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="safewallet" class="anchor" href="#safewallet"><span class="octicon octicon-link"></span></a>Safewallet</h1>
 
-          <h1 id="project_title">Safewallet</h1>
-          <h2 id="project_tagline">Safewallet open-source crypto-currency banking software</h2>
+<p>The world's first open-source crypto-currency bank.</p>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/cryptokid/safewallet/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/cryptokid/safewallet/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+<h2>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<p>One of the original purposes of a bank was to safely store it's clients' valuable assets. In mediaeval times it was usually not a very good idea for a merchant to store their gold and silver at home. If a robber came and stole the merchant's valuables, it would be an irrecoverable loss. The bank was a place where gold and silver could be stored in a secure building with armed guards.</p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>In moderns times crypto-currencies are a store of value. Coins exists as digital bits protected by a private key. If a robber gains access to your private key or password, the coins are lost and irrecoverable. A bank is needed to protect the assets of the individual. Using Safe Wallet, individuals are protected from every possible scenario of theft and fraud. Safe Wallet represents the modern version of what a bank should be.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>100% open and open-source</li>
+<li>Hybrid On-line Off-line wallet system</li>
+<li>Supports many leading crypto-currencies such as <a href="http://bitcoin.org">Bitcoin</a> or <a href="http://peercoin.net/">Peercoin</a>
+</li>
+<li>User Account Management</li>
+<li>Wallet Management</li>
+<li>Advanced Security Features</li>
+<li>Our books are open</li>
+<li>The bank is owned by the account holders</li>
+</ul><h2>
+<a name="status" class="anchor" href="#status"><span class="octicon octicon-link"></span></a>Status</h2>
+
+<p><a href="http://status.safewallet.org/">http://status.safewallet.org/</a></p>
+
+<h2>
+<a name="open-ownership---interest-for-account-holders" class="anchor" href="#open-ownership---interest-for-account-holders"><span class="octicon octicon-link"></span></a>Open-ownership - Interest for account holders</h2>
+
+<p>Safe Wallet account holders are share holders in the bank and receive dividends in the form of a variable annual interest rate. This annual interest rate is directly determined by the banks revenue generated by premium features and transaction fees.</p>
+
+<h2>
+<a name="security" class="anchor" href="#security"><span class="octicon octicon-link"></span></a>Security</h2>
+
+<p>Security is paramount for Safe Wallet. In order to ensure safety we have enacted several security measures which prevent coins from loss due to: theft, hacks, identify-theft, or even compromised servers.</p>
+
+<p>The Safe Wallet system is built in such a way that even with complete loss of server control the account holders are still protected. We encourage other online services with hosted "hot-wallets" to use the Safe Wallet architecture.</p>
+
+<p><img src="https://github.com/bigcompany/safewallet/raw/master/docs/safewallet-architecture.png" title="Safe Wallet Architecture"></p>
+
+<h3>
+<a name="key-points" class="anchor" href="#key-points"><span class="octicon octicon-link"></span></a>Key points</h3>
+
+<ul>
+<li>There is a pool of offline "cold-wallets"</li>
+<li>Offline wallets are protected with physical security measures</li>
+<li>Newly deposited coins are <em>immediately</em> transfer to offline wallets</li>
+<li>A wallet database is used to keep track of account holder balances</li>
+<li>All database actions are tracked with revision history</li>
+<li>Withdrawals requests are processed on-demand</li>
+<li>Withdrawals are subject to security procedures, such as email, voice, or video confirmation</li>
+<li>When the ledger needs to be settled, an offline wallet is manually brought online, drained, and not re-used</li>
+</ul><h2>
+<a name="architecture" class="anchor" href="#architecture"><span class="octicon octicon-link"></span></a>Architecture</h2>
+
+<p>Safe Wallet is separated into several smaller services. Each service is intended to run in an isolated environment to help thwart any possible security breach.</p>
+
+<h3>
+<a name="frontend-web" class="anchor" href="#frontend-web"><span class="octicon octicon-link"></span></a>Frontend Web</h3>
+
+<p>Serves the front facing web interface for Safe Wallet.</p>
+
+<ul>
+<li>User Account Management</li>
+<li>Sessions</li>
+<li>Security Settings</li>
+<li>Wallet Management</li>
+<li>Withdrawal Requests</li>
+</ul><p><em>To start the frontend in a development environment</em> </p>
+
+<pre><code>node bin/frontend
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<h3>
+<a name="account-deposits" class="anchor" href="#account-deposits"><span class="octicon octicon-link"></span></a>Account Deposits</h3>
+
+<p>Responsible for all incoming coins. </p>
+
+<ul>
+<li>Immediately transfers received coins from the "hot-wallet" to an offline "cold-wallet".</li>
+<li>When new coins are received the wallet database is updated</li>
+<li>To minimize risk, this service moves coins from online to offline as quickly as possible.</li>
+</ul><p><em>To start deposits in development environment</em> </p>
+
+<pre><code> node bin/deposits --currency bitcoin
+</code></pre>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="account-withdrawals" class="anchor" href="#account-withdrawals"><span class="octicon octicon-link"></span></a>Account Withdrawals</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>Processes account holder coin withdrawal requests.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<ul>
+<li>Checks ledger database for accounts payable</li>
+<li>Settles accounts payable by draining current "hot-wallet"</li>
+<li>Can only make payments if a previously off-line wallet has been manually brought on-line</li>
+<li>Withdrawal requests are subject to security measures before they are approved</li>
+</ul><p><em>To start withdrawals in development environment</em> </p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<pre><code>node bin/withdrawals
+</code></pre>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<h2>
+<a name="built-with" class="anchor" href="#built-with"><span class="octicon octicon-link"></span></a>Built With</h2>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<ul>
+<li><a href="http://nodejs.org">Node.js</a></li>
+<li><a href="http://couchdb.org">CouchDB</a></li>
+<li><a href="http://expressjs.com">Express</a></li>
+<li><a href="http://github.com/bigcompany/resource">Resource</a></li>
+<li><a href="http://github.com/bigcompany/view">View</a></li>
+<li><a href="http://mschema.org">mschema</a></li>
+<li><a href="http://jugglingdb.co/">JugglingDB</a></li>
+<li><a href="http://www.alpacajs.org/">Alpaca Forms</a></li>
+<li><a href="http://jquery.com">jQuery</a></li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<p>MIT</p>
+        </section>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+        <aside id="sidebar">
+          <a href="https://github.com/cryptokid/safewallet/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/cryptokid/safewallet/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/cryptokid/safewallet"></a> is maintained by <a href="https://github.com/cryptokid">cryptokid</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Safewallet maintained by <a href="https://github.com/cryptokid">cryptokid</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
+  
   </body>
 </html>
